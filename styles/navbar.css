@@ -1,0 +1,121 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    background-color: #aedff2;
+
+    z-index: 1;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.logo{
+    height: 50px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.container{
+    margin: auto;
+}
+
+.header .nav ul{
+    display: flex;
+    gap: 20px;
+}
+.header .nav ul li a{
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    color:black;
+    font-size: var(--default-font-size);
+
+}
+
+.header .nav  ul li a:hover{
+    background-color: var( --secondary-color);
+    cursor: pointer;
+    
+}
+
+.nav-toggler{
+    display: none;
+    height: 34px;
+    width: 34px;
+    cursor: pointer;
+    margin-right: 15px;
+    border: none;
+    background-color: #aedff2;
+}
+
+.nav-toggler span{
+    background-color: black;
+    height: 2px;
+    width: 20px;
+    display: block;
+    margin: auto;
+    position: relative;
+    transition: all 0.3s ease;
+    
+}
+.nav-toggler span::before,
+.nav-toggler span::after{
+    content: "";
+    position:absolute;
+    left: 0px;
+    right: 0px;
+    background-color:black;
+    transition: all 0.3s ease;
+    width: 100%;
+    height: 100%;
+
+}
+.nav-toggler span::before{
+    top: -6px;
+}
+.nav-toggler span::after{
+    top: 6px;
+}
+.nav-toggler span active{
+    background-color: transparent;
+}
+
+
+
+@media(max-width:991px){
+   
+        
+    .nav-toggler{
+        display: block;
+      
+    }
+    .nav{
+        width: 100%;
+        padding: 0px;
+        max-height: 0px;
+        overflow: hidden;
+        transform: all 0.5s;
+    }
+    .header .nav ul{
+        padding: 12px 15px 0;
+        margin-top: 12px;
+        border-top: 1px solid rgba(255,255,255,0.2);
+        flex-direction: column;
+    }
+    .header .nav ul li{
+        display: block;
+        margin: 0;
+    }
+}
+
+
