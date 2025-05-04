@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', (event) => {
-    let text = ["Mahesh Chilaka", "a Mern Stack Developer"];
+    let text = [ " a Python Developer","a Full Stack Developer",];
 
     let count = 0;
     let index = 0;
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         letter = currentText.slice(0, ++index);
         console.log(letter);
 
-        const h1 = document.querySelector('.home .left h1');
+        const h1 = document.querySelector('.home .left #mahi');
         h1.textContent = letter;
 
         if (letter.length == currentText.length) {

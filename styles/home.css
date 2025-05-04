@@ -27,6 +27,7 @@
     margin-bottom: 20px;
     
 }
+
 .home .left h1{
     font-size: 3rem;
     color:rgb(39, 162, 239);
@@ -49,8 +50,6 @@
     border-radius: 10px;
     object-fit: cover;
 }
-
-
 
 @media (max-width: 1000px) {
     .home{
@@ -78,17 +77,18 @@
         margin-top: 20px;
 
     }
+ 
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 576px) {
     .home .left h2{
         font-size: 2rem;
         color: #333;
         font-weight: 300;
         margin-bottom: 10px;
     }
-    
+   
     .home .left h1{
         font-size: 1.6rem;
         color:rgb(39, 162, 239);
@@ -103,8 +103,11 @@
         margin: 0 auto; 
         display: block;
     }
-    
+    .home .left p{
+        .home .left p {
+            font-size: 1.3rem; /* Reduced for mobile */
+          }
   
 }
-
+}
 
