@@ -10,6 +10,13 @@
     background-color: #cbe5ef;
 }
 
+#mahi {
+    display: inline-block;
+    min-width: 220px; /* Match or slightly exceed the longest text */
+    white-space: nowrap;
+}
+
+
 .home .left{
     flex: 1;
     padding: 20px;
